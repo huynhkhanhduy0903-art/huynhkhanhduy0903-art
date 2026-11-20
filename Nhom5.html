@@ -486,18 +486,15 @@
             <p class="slogan">“Tạm biệt để bắt đầu, giữ lại để không quên”</p>
 
             <!-- KHU VỰC BANNER ĐÁNH DẤU ĐỂ BẠN TỰ CHÈN ẢNH -->
-            <div class="banner-placeholder">
-                <!-- MẸO: Khi chèn ảnh thật, bạn xóa 2 thẻ <p> dưới đây và mở chú thích thẻ <img> -->
-                <!-- <img src="ten-anh-banner.jpg" alt="Ảnh tập thể lớp" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"> -->
-                <p style="font-size: 1.4rem; font-weight: 700; color: #3a86ff;">🖼️ [HÌNH ẢNH CẦN CHÈN: BANNER TẬP THỂ LỚP]</p>
-                <p style="margin-top: 8px; color: #475569;">(Gợi ý: Chèn ảnh chụp chung cả lớp dưới sân trường hoặc ảnh kỷ yếu ngang)</p>
+            <div class="banner-placeholder">                            
+            <img src="banner.jpg" alt="Ảnh banner" style="width:100%; height:100%; object-fit:cover; border-radius:16px;">            
             </div>
 
             <p style="max-width: 720px; margin: 0 auto 25px auto; font-size: 1.05rem;">
                 Ba năm cấp ba trôi qua nhanh như một cơn mưa rào mùa hạ. Nơi đây lưu giữ từng nụ cười ngây ngô thuở lớp 10, những buổi chiều rực nắng năm lớp 11 và giây phút trưởng thành rực rỡ của tuổi 18.
             </p>
 
-            <a href="#phan-noi-dung" class="btn-start">Khám phá cuốn lưu bút thanh xuân ↓</a>
+            <a href="#phan-noi-dung" class="btn-start">Cùng khám phá cuốn lưu bút thanh xuân nào ↓</a>
         </section>
 
 
@@ -510,79 +507,55 @@
             <!-- BỘ LỌC CHUYỂN NHANH GIỮA 3 KHỐI LỚP -->
             <div class="timeline-tabs">
                 <button class="tab-btn active" onclick="filterGrade('all', this)">🌸 Tất cả hành trình</button>
-                <button class="tab-btn" onclick="filterGrade('lop10', this)">🌱 Khối 10: Bỡ ngỡ</button>
-                <button class="tab-btn" onclick="filterGrade('lop11', this)">☀️ Khối 11: Rực rỡ</button>
-                <button class="tab-btn" onclick="filterGrade('lop12', this)">🎓 Khối 12: Trưởng thành</button>
+                <button class="tab-btn" onclick="filterGrade('lop10', this)">🌱 Lớp 10: Bỡ ngỡ</button>
+                <button class="tab-btn" onclick="filterGrade('lop11', this)">☀️ Lớp 11: Rực rỡ</button>
+                <button class="tab-btn" onclick="filterGrade('lop12', this)">🎓 Lớp 12: Trưởng thành</button>
             </div>
 
             <!-- -------------------- MỐC 1: LỚP 10 (6 ẢNH + 1 VIDEO) -------------------- -->
             <section id="lop10" class="grade-section">
                 <div class="grade-header">
-                    <h2>🌱 Chương 1: Lớp 10 – Ngày đầu bỡ ngỡ</h2>
+                    <h2>Chương 1: Lớp 10 – Ngày đầu bỡ ngỡ</h2>
                     <div class="quote-box">
                         “Thanh xuân giống như một cơn mưa rào, dù cho bạn từng bị cảm lạnh vì tắm mưa, bạn vẫn muốn được đắm mình trong cơn mưa ấy lần nữa.” — Cửu Bả Đao
                     </div>
                 </div>
-
-                <!-- Bảng tóm tắt sự kiện lớp 10 -->
-                <table class="memory-table">
-                    <thead>
-                        <tr>
-                            <th>Thời gian</th>
-                            <th>Sự kiện đáng nhớ</th>
-                            <th>Cảm xúc đọng lại</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Tháng 9</td>
-                            <td>Lễ Khai giảng đầu tiên dưới mái trường THPT</td>
-                            <td>40 gương mặt xa lạ bắt đầu làm quen</td>
-                        </tr>
-                        <tr>
-                            <td>Tháng 11</td>
-                            <td>Hội diễn văn nghệ chào mừng 20/11</td>
-                            <td>Những buổi tập nhảy vụng về nhưng đầy tiếng cười</td>
-                        </tr>
-                    </tbody>
-                </table>
-
                 <button class="toggle-gallery-btn" onclick="toggleGallery('gal10', this)">📂 Thu gọn / Mở sổ ảnh & video Lớp 10</button>
-
                 <div id="gal10" class="gallery-wrapper">
                     <!-- 6 Hình ảnh Lớp 10 -->
                     <div class="photo-grid">
-                        <div class="polaroid-card" onclick="openLightbox('Ảnh 1 - Lớp 10: Ngày đầu nhận lớp')">
-                            <div class="media-placeholder">🖼️ HÌNH ẢNH CẦN CHÈN 1<br><small>(Nhấn để phóng to)</small></div>
-                            <p>Ngày đầu nhận lớp</p>
+                        <div class="polaroid-card" onclick="openLightbox('Ảnh 1 - Lớp 10: Ngày đầu gặp gỡ')">
+                            <div class="media-placeholder"> <img src="1hinhlop10.jpg" alt="Ảnh tập thể lớp" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"><br><small>(Nhấn để phóng to)</small></div>
+                            <p> Ngày đầu gặp gỡ</p>
                         </div>
-                        <div class="polaroid-card" onclick="openLightbox('Ảnh 2 - Lớp 10: Tiết thể dục đầu tiên')">
-                            <div class="media-placeholder">🖼️ HÌNH ẢNH CẦN CHÈN 2<br><small>(Nhấn để phóng to)</small></div>
-                            <p>Tiết thể dục nắng gắt</p>
+                        <div class="polaroid-card" onclick="openLightbox('Ảnh 2 - Lớp 10: Chuyến đi khó quên')">
+                            <div class="media-placeholder"><img src="2hinhlop10.jpg" alt="Ảnh tập thể lớp" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"><br><small>(Nhấn để phóng to)</small></div>
+                            <p> Chuyến đi khó quên</p>
                         </div>
-                        <div class="polaroid-card" onclick="openLightbox('Ảnh 3 - Lớp 10: Văn nghệ 20/11')">
-                            <div class="media-placeholder">🖼️ HÌNH ẢNH CẦN CHÈN 3<br><small>(Nhấn để phóng to)</small></div>
-                            <p>Hậu trường 20/11</p>
+                        <div class="polaroid-card" onclick="openLightbox('Ảnh 3 - Lớp 10: Tất niên cùng nhau')">
+                            <div class="media-placeholder"><img src="3hinhlop10.jpg" alt="Ảnh tập thể lớp" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"><br><small>(Nhấn để phóng to)</small></div>
+                            <p>Tất niên cùng nhau</p>
                         </div>
-                        <div class="polaroid-card" onclick="openLightbox('Ảnh 4 - Lớp 10: Sinh nhật tập thể')">
-                            <div class="media-placeholder">🖼️ HÌNH ẢNH CẦN CHÈN 4<br><small>(Nhấn để phóng to)</small></div>
-                            <p>Bánh kem bất ngờ</p>
+                        <div class="polaroid-card" onclick="openLightbox('Ảnh 4 - Lớp 10: Một ngày bình thường')">
+                            <div class="media-placeholder"><img src="4hinhlop10.jpg" alt="Ảnh tập thể lớp" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"><br><small>(Nhấn để phóng to)</small></div>
+                            <p>Một ngày bình thường</p>
                         </div>
-                         <div class="polaroid-card" onclick="openLightbox('Ảnh 5 - Lớp 10: Giờ ra chơi ở căng-tin')">
-                            <div class="media-placeholder">🖼️ HÌNH ẢNH CẦN CHÈN 5<br><small>(Nhấn để phóng to)</small></div>
-                            <p>Biệt đội căng-tin</p>
+                         <div class="polaroid-card" onclick="openLightbox('Ảnh 5 - Lớp 10: Hành trình đặc biệt')">
+                            <div class="media-placeholder"><img src="5hinhlop10.jpg" alt="Ảnh tập thể lớp" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"><br><small>(Nhấn để phóng to)</small></div>
+                            <p>Hành trình đặc biệt</p>
                         </div>
                         <div class="polaroid-card" onclick="openLightbox('Ảnh 6 - Lớp 10: Tổng kết năm học đầu tiên')">
-                            <div class="media-placeholder">🖼️ HÌNH ẢNH CẦN CHÈN 6<br><small>(Nhấn để phóng to)</small></div>
-                            <p>Khép lại năm lớp 10</p>
+                            <div class="media-placeholder"><img src="6hinhlop10.jpg" alt="Ảnh tập thể lớp" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"><br><small>(Nhấn để phóng to)</small></div>
+                            <p>Mùa xuân đầu tiên</p>
                         </div>
                     </div>
 
                     <!-- 1 Video Lớp 10 -->
                     <div class="video-grid">
                         <div class="video-card">
-                            <div class="video-placeholder">🎬 VIDEO CẦN CHÈN 1 (Lớp 10)<br><small>Thay khung này bằng thẻ &lt;video&gt; của lớp bạn</small></div>
-                            <p><strong>Video:</strong> Vlog ngày đầu tiên chúng mình gặp nhau</p>
+                            <div class="video-placeholder"> <video controls style="width: 100%; height: 220px; border-radius: 12px; object-fit: cover; background: #000;">
+        <source src="vdlop10.mp4" type="video/mp4"> Trình duyệt của bạn không hỗ trợ phát video.</video><br><small>Thay khung này bằng thẻ &lt;video&gt; của lớp bạn</small></div>
+                            <p><strong>Video:</strong> Kỉ niệm cùng cô Đào</p>
                         </div>
                     </div>
                 </div>
@@ -591,74 +564,53 @@
             <!-- -------------------- MỐC 2: LỚP 11 (6 ẢNH + 2 VIDEO) -------------------- -->
             <section id="lop11" class="grade-section" style="border-top-color: #ff8fa3;">
                 <div class="grade-header">
-                    <h2 style="color: #ff758f;">☀️ Chương 2: Lớp 11 – Những ngày rực rỡ</h2>
+                    <h2 style="color: #ff758f;">Chương 2: Lớp 11 – Những ngày rực rỡ</h2>
                     <div class="quote-box">
-                        “Chúng ta của năm 17 tuổi, không có gì trong tay nhưng lại có cả một bầu trời mơ ước và những người bạn kề vai sát cánh.”
+                        “Chúng ta của năm 16,17 tuổi, không có gì trong tay nhưng lại có cả một bầu trời kỉ niệm khó phai và những người bạn khó quên.”
                     </div>
                 </div>
-
-                <table class="memory-table">
-                    <thead>
-                        <tr>
-                            <th>Thời gian</th>
-                            <th>Sự kiện đáng nhớ</th>
-                            <th>Cảm xúc đọng lại</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Tháng 1</td>
-                            <td>Hội trại Xuân & Thiết kế cổng trại</td>
-                            <td>Thức trắng đêm trang trí nhưng vui hết nấc</td>
-                        </tr>
-                        <tr>
-                            <td>Tháng 3</td>
-                            <td>Chuyến dã ngoại & Hoạt động Đoàn 26/3</td>
-                            <td>Gắn kết tình bạn không thể tách rời</td>
-                        </tr>
-                    </tbody>
-                </table>
-
                 <button class="toggle-gallery-btn" onclick="toggleGallery('gal11', this)">📂 Thu gọn / Mở sổ ảnh & video Lớp 11</button>
 
                 <div id="gal11" class="gallery-wrapper">
                     <!-- 6 Hình ảnh Lớp 11 -->
                     <div class="photo-grid">
-                        <div class="polaroid-card" onclick="openLightbox('Ảnh 1 - Lớp 11: Hội trại Xuân')">
-                            <div class="media-placeholder">🖼️ HÌNH ẢNH CẦN CHÈN 1<br><small>(Nhấn để phóng to)</small></div>
-                            <p>Cổng trại tự tay làm</p>
+                        <div class="polaroid-card" onclick="openLightbox('Ảnh 1 - Lớp 11: Kỉ niệm cùng thầy cô')">
+                            <div class="media-placeholder"><img src="1hinhlop11.jpg" alt="Ảnh tập thể lớp" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"><br><small>(Nhấn để phóng to)</small></div>
+                            <p> Mùa xuân cùng thầy</p>
                         </div>
-                        <div class="polaroid-card" onclick="openLightbox('Ảnh 2 - Lớp 11: Chuyến đi dã ngoại')">
-                            <div class="media-placeholder">🖼️ HÌNH ẢNH CẦN CHÈN 2<br><small>(Nhấn để phóng to)</small></div>
-                            <p>Chuyến xe thanh xuân</p>
+                        <div class="polaroid-card" onclick="openLightbox('Ảnh 2 - Lớp 11: Kỉ niệm cùng thầy cô')">
+                            <div class="media-placeholder"><img src="2hinhlop11.jpg" alt="Ảnh tập thể lớp" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"><br><small>(Nhấn để phóng to)</small></div>
+                            <p>Kỉ niệm cùng cô T.Anh</p>
                         </div>
-                        <div class="polaroid-card" onclick="openLightbox('Ảnh 3 - Lớp 11: Hội khỏe Phù Đổng')">
-                            <div class="media-placeholder">🖼️ HÌNH ẢNH CẦN CHÈN 3<br><small>(Nhấn để phóng to)</small></div>
-                            <p>Cổ vũ hết mình</p>
+                        <div class="polaroid-card" onclick="openLightbox('Ảnh 3 - Lớp 11: Kỉ niệm cùng thầy cô')">
+                            <div class="media-placeholder"><img src="3hinhlop11.jpg" alt="Ảnh tập thể lớp" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"><br><small>(Nhấn để phóng to)</small></div>
+                            <p>Người mẹ xưa</p>
                         </div>
-                        <div class="polaroid-card" onclick="openLightbox('Ảnh 4 - Lớp 11: Ngày 8/3 của con gái lớp mình')">
-                            <div class="media-placeholder">🖼️ HÌNH ẢNH CẦN CHÈN 4<br><small>(Nhấn để phóng to)</small></div>
-                            <p>Món quà bất ngờ 8/3</p>
+                        <div class="polaroid-card" onclick="openLightbox('Ảnh 4 - Lớp 11: Hội trại xuân')">
+                            <div class="media-placeholder"><img src="4hinhlop11.jpg" alt="Ảnh tập thể lớp" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"><br><small>(Nhấn để phóng to)</small></div>
+                            <p>cắm trại thật vui</p>
                         </div>
-                        <div class="polaroid-card" onclick="openLightbox('Ảnh 5 - Lớp 11: Giờ học nhóm')">
-                            <div class="media-placeholder">🖼️ HÌNH ẢNH CẦN CHÈN 5<br><small>(Nhấn để phóng to)</small></div>
-                            <p>Cùng nhau ôn thi</p>
+                        <div class="polaroid-card" onclick="openLightbox('Ảnh 5 - Lớp 11: Hội trại xuân')">
+                            <div class="media-placeholder"><img src="5hinhlop11.jpg" alt="Ảnh tập thể lớp" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"><br><small>(Nhấn để phóng to)</small></div>
+                            <p>Thiết kế trang phục</p>
                         </div>
-                        <div class="polaroid-card" onclick="openLightbox('Ảnh 6 - Lớp 11: Hoàng hôn sân trường')">
-                            <div class="media-placeholder">🖼️ HÌNH ẢNH CẦN CHÈN 6<br><small>(Nhấn để phóng to)</small></div>
-                            <p>Chiều muộn ở lại lớp</p>
+                        <div class="polaroid-card" onclick="openLightbox('Ảnh 6 - Lớp 11: Hội trại xuân')">
+                            <div class="media-placeholder"><img src="6hinhlop11.jpg" alt="Ảnh tập thể lớp" style="width:100%; height:100%; object-fit:cover; border-radius:16px;"><br><small>(Nhấn để phóng to)</small></div>
+                            <p>Thành công rực rỡ</p>
                         </div>
                     </div>
 
                     <!-- 2 Video Lớp 11 -->
                     <div class="video-grid">
                         <div class="video-card">
-                            <div class="video-placeholder">🎬 VIDEO CẦN CHÈN 1 (Lớp 11)<br><small>Chèn thẻ &lt;video&gt; tại đây</small></div>
+                            <div class="video-placeholder"> <video controls style="width: 100%; height: 220px; border-radius: 12px; object-fit: cover; background: #000;"> 
+                                <source src="1vdlop11.mp4" type="video/mp4"> Trình duyệt của bạn không hỗ trợ phát video.</video><br><small>Chèn thẻ &lt;video&gt; tại đây</small></div>
                             <p><strong>Video 1:</strong> Kỷ niệm Hội trại Xuân đáng nhớ</p>
                         </div>
                         <div class="video-card">
-                            <div class="video-placeholder">🎬 VIDEO CẦN CHÈN 2 (Lớp 11)<br><small>Chèn thẻ &lt;video&gt; tại đây</small></div>
-                            <p><strong>Video 2:</strong> Những khoảnh khắc hài hước trong lớp</p>
+                            <div class="video-placeholder"> <video controls style="width: 100%; height: 220px; border-radius: 12px; object-fit: cover; background: #000;">
+                            <source src="2vdlop11.mp4" type="video/mp4"> Trình duyệt của bạn không hỗ trợ phát video.</video><br><small>Chèn thẻ &lt;video&gt; tại đây</small></div>
+                            <p><strong>Video 2:</strong> Khoảnh khắc rung động</p>
                         </div>
                     </div>
                 </div>
