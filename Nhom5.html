@@ -237,39 +237,20 @@
                 <h2 class="section-divider-title"> Kết Nối tình bạn </h2>
                 <p>Dù mai này mỗi người một phương trời, vẫn mong những khoảnh khắc nay sẽ luôn dược giữ mãi trong tim mỗi người.</p>
             </div>
-                <!-- Biểu mẫu viết lưu bút trực tiếp -->
-                <div>
-                    <h3 style="color: #ff758f; margin-bottom: 15px; font-size: 1.4rem;">💌 Gửi đôi dòng lưu bút</h3>
-                    <form class="contact-form" onsubmit="sendMessage(event)">
-                        <label><strong>Tên của bạn:</strong></label>
-                        <input type="text" id="senderName" placeholder="Nhập tên hoặc biệt danh của bạn..." required>
-                        <label><strong>Lời nhắn gửi thanh xuân:</strong></label>
-                        <textarea id="senderNote" rows="5" placeholder="Viết lời chúc hoặc kỷ niệm đáng nhớ nhất của bạn..." required></textarea>
-                        <label><strong>Ước mơ của bạn sau này:</strong></label>
-                        <textarea id="senderNote" rows="5" placeholder="Về một trường mơ ước, một công việc hay bất kì điều gì mà bạn momg muốn..." required></textarea>
-                        <button type="submit" class="btn-start" style="border: none; width: 100%; cursor: pointer;"> Gửi vào hộp thư ký ức ✨</button>
-                    </form>
-                    <div id="messageResult" style="margin-top: 15px; font-weight: 600; color: #3a86ff;"></div>
-                </div>
-            </div>
         </section>
-
+        
     </main>
-
-    <!-- CỬA SỔ PHÓNG TO KHI NHẤN VÀO HÌNH ẢNH -->
+    
     <div id="lightboxModal" class="lightbox" onclick="closeLightbox()">
-        <div class="lightbox-content" onclick="event.stopPropagation()">
-            <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
-            <h3 id="lightboxTitle" style="color: #3a86ff; margin-bottom: 15px;">Tiêu đề ảnh</h3>
-            <div class="media-placeholder" style="height: 280px;">
-                🖼️ KHU VỰC HIỂN THỊ ẢNH PHÓNG TO<br>
-                <small>(Khi bạn thay thế thẻ &lt;img&gt; thật, ảnh sẽ hiện rõ nét ở đây)</small>
-            </div>
-            <p style="color: #64748b; font-size: 0.95rem;">Nhấn ra ngoài hoặc dấu (×) để đóng khung xem ảnh.</p>
-        </div>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <h3 id="lightboxTitle" style="color: #8D493A; margin-bottom: 12px;">Tiêu đề ảnh</h3>
+        <img id="lightboxImg" src="" alt="Ảnh phóng to" style="width: 100%; max-height: 360px; object-fit: contain; border-radius: 6px; background: #EAE0D1; border: 1px solid #D5C4A1; margin-bottom: 10px;">
+        <p id="lightboxCaption" style="color: #B8860B; font-style: italic; font-weight: 700; margin-bottom: 6px;"></p>
+        <p style="color: #6D5B50; font-size: 0.9rem;">Nhấn ra ngoài hoặc dấu (&times;) để đóng khung xem ảnh.</p>
     </div>
-
-    <!-- CHÂN TRANG -->
+    </div>
+    
     <footer>
         © Kí ức thời niên thiếu | “Tạm biệt để bắt đầu, giữ lại để không quên” <br>
         Thiết kế bởi: <span class="highlight-tag">Nhóm 5:"Bát"cơm này mặn; Email:batcomman@gmail.com</span>
@@ -278,51 +259,6 @@
     <!-- ==========================================================================
          PHẦN JAVASCRIPT: ĐIỀU KHIỂN LỌC KHỐI LỚP, SỔ ẢNH, PHÓNG TO VÀ GỬI LƯU BÚT
          ========================================================================== -->
-    <script>
-        // 1. Lọc hiển thị theo từng khối lớp (10, 11, 12 hoặc Tất cả)
-        function filterGrade(gradeId, btnElement) {
-            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-            btnElement.classList.add('active');
-
-            const sections = document.querySelectorAll('.grade-section');
-            sections.forEach(sec => {
-                if (gradeId === 'all' || sec.id === gradeId) {
-                    sec.style.display = 'block';
-                } else {
-                    sec.style.display = 'none';
-                }
-            });
-        }
-
-        // 2. Nhấn nút để sổ ra / thu gọn thư viện ảnh và video
-        function toggleGallery(galleryId, btn) {
-            const gallery = document.getElementById(galleryId);
-            gallery.classList.toggle('collapsed');
-            if (gallery.classList.contains('collapsed')) {
-                btn.innerHTML = '📖 Nhấn để mở sổ ảnh & video';
-            } else {
-                btn.innerHTML = '📔 Thu gọn sổ ảnh & video';
-            }
-        }
-
-        // 3. Nhấn vào khung ảnh để mở cửa sổ xem phóng to
-        function openLightbox(title) {
-            document.getElementById('lightboxTitle').innerText = title;
-            document.getElementById('lightboxModal').style.display = 'flex';
-        }
-
-        function closeLightbox() {
-            document.getElementById('lightboxModal').style.display = 'none';
-        }
-
-        // 4. Thông báo xác nhận khi gửi lưu bút ở cuối trang
-        function sendMessage(event) {
-            event.preventDefault();
-            const name = document.getElementById('senderName').value;
-            const result = document.getElementById('messageResult');
-            result.innerHTML = `💖 Cảm ơn <strong>${name}</strong>! Lưu bút của bạn đã được ghi lại vào kỷ ức thanh xuân của lớp.`;
-            event.target.reset();
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
